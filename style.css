@@ -1,0 +1,141 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+}
+.about{
+    padding-bottom: 115px
+}
+.left,
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 180px;
+}
+
+.right h1 {
+    font-size: 15px;
+    
+}
+
+.left a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.intensive_title {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 120px;
+    font-size: 48px;
+    line-height: 140px;
+}
+
+.cards {
+    min-height: 607px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 38px;
+}
+
+.intensive_box {
+    display: flex;
+
+}
+
+.intensive_item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 37px;
+    margin: 35px;
+
+}
+
+.intensive_box p {
+    font-size: 24px;
+    padding-left: 78px
+}
+
+.cards a {
+    font-size: 16px;
+    display: flex;
+    padding-left: 70px;
+    justify-content: flex-start;
+}
+
+.intensive_desc {
+    font-size: 18px;
+    line-height: 22px;
+    color: #0047FF;
+    margin: -20px;
+    padding-left: 139px;
+}
+
+
+
+table th{
+    text-align: start;
+    font-size: 14px;
+    color: #B9C0D1;
+}
+
+ .line::after{
+    display: block;
+    border-bottom: 1 px solid #004cff;
+    height: 5px;
+    border-color: aqua;
+    border-width: 3px;
+}
+
+table {
+    table-layout: fixed;
+    width: 88%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: -140px;
+  }
+  
+  thead th:nth-child(1) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 20%;
+  }
+  thead th:last-child() {
+    width: 20%;
+  }
+  
+  
+  th, td {
+    padding: 20px;
+  }
+  
+  .a_us  {
+    font-size: 30px;
+    padding-left: 100px;
+    /* margin-bottom:10px ; */
+  }
