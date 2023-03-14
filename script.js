@@ -1,18 +1,7 @@
-let form = document.forms.user
-form.onsubmit = (event) => {
-    event.preventDefault()
 
-    let st = {
-        id: Math.random(),
-    }
-
-    let fm = new FormData(form)
-    fm.forEach((value, key) => {
-        st[key] = value
-    })
-}
 
 function reload(arr, pl) {
+//    console.log(item,pl);
     pl.innerHTML = ""
     for(let item of arr){
         //th
@@ -36,7 +25,7 @@ function reload(arr, pl) {
         // money_tran.innerHTML = 'Сумма транзации'
         // when_tr.innerHTML = "Когда"
 
-        number.innerHTML = arr.indexOf(item)
+        number.innerHTML = arr.indexOf(item) + 1
         card.innerHTML = item.wallet
         catg_td.innerHTML = item.puschased
         money_tran_tg.innerHTML = item.money
@@ -44,6 +33,8 @@ function reload(arr, pl) {
 
         tRow_td.append(number,card,catg_td,money_tran_tg,when_td)
         pl.append(tRow_td)
+    
+        reload(arr,pl)
     }
 
 }
